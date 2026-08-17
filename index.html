@@ -6,9 +6,9 @@
     <title>Privacy Policy - ThingList</title>
     <style>
         body { font-family: sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.6; }
-        .lang-switcher { display: flex; gap: 15px; margin: 20px 0; flex-wrap: wrap; }
-        .lang-btn { padding: 10px 20px; background: #007AFF; color: white; text-decoration: none; border-radius: 8px; }
-        .lang-btn:hover { background: #0055cc; }
+        .lang-switcher { margin: 20px 0; }
+        select.lang-select { padding: 12px 20px; border-radius: 10px; border: 2px solid #007AFF; background: white; font-size: 16px; color: #333; cursor: pointer; width: 100%; max-width: 400px; }
+        select.lang-select:focus { outline: none; border-color: #0055cc; box-shadow: 0 0 0 3px rgba(0,122,255,0.2); }
         .privacy-content { margin-top: 20px; }
     </style>
 </head>
@@ -16,14 +16,18 @@
 <h1>🔒 Privacy Policy - ThingList</h1>
 
 <div class="lang-switcher">
-    <a href="privacy_ru.html" class="lang-btn">🇷🇺 Русский</a>
-    <a href="privacy_en.html" class="lang-btn">🇬🇧 English</a>
-    <a href="privacy_zh.html" class="lang-btn">🇨🇳 中文</a>
-    <a href="privacy_ar.html" class="lang-btn">🇸🇦 العربية</a>
-    <a href="privacy_es.html" class="lang-btn">🇪🇸 Español</a>
-    <a href="privacy_pt.html" class="lang-btn">🇧🇷 Português</a>
-    <a href="privacy_de.html" class="lang-btn">🇩🇪 Deutsch</a>
-    <a href="privacy_fr.html" class="lang-btn">🇫🇷 Français</a>
+    <select class="lang-select" onchange="if(this.value) location.href=this.value">
+        <option value="">🌐 Выберите язык / Select language</option>
+        <option value="privacy_ru.html">🇷🇺 Русский</option>
+        <option value="privacy_en.html">🇬🇧 English</option>
+        <option value="privacy_zh.html">🇨🇳 中文</option>
+        <option value="privacy_ar.html">🇸🇦 العربية</option>
+        <option value="privacy_es.html">🇪🇸 Español</option>
+        <option value="privacy_pt.html">🇧🇷 Português</option>
+        <option value="privacy_de.html">🇩🇪 Deutsch</option>
+        <option value="privacy_fr.html">🇫🇷 Français</option>
+        <option value="privacy_hi.html">🇮🇳 हिन्दी</option>
+    </select>
 </div>
 
 <div class="privacy-content">
@@ -35,6 +39,7 @@
     <p>Selecione o seu idioma acima.</p>
     <p>Bitte wählen Sie oben Ihre Sprache aus.</p>
     <p>Veuillez sélectionner votre langue ci-dessus.</p>
+    <p>कृपया ऊपर अपनी भाषा चुनें।</p>
 </div>
 </body>
 </html>
